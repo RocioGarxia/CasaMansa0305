@@ -1,14 +1,12 @@
-import { AppBar, Toolbar, IconButton, Button, Typography } from "@material-ui/core";
-import MenuIcon from '@material-ui/icons/Menu';
+import { AppBar, Toolbar, Button, Typography } from "@material-ui/core";
+import CartWidget from "./CartWidget";
 
 const Navbar = () => {
     return (
     
 <AppBar position="static">
   <Toolbar>
-    <IconButton edge="start" color="inherit" aria-label="menu">
-      <MenuIcon />
-    </IconButton>
+    <CartWidget/>
     <Typography variant="h6">
       News
     </Typography>

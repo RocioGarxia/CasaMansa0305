@@ -6,6 +6,9 @@ function App() {
     <div className="App">
   
 <Navbar/>
+<ItemListContainer>
+  <h1>Casa Mansa: A todo ponéle arte</h1>
+</ItemListContainer>
 </div>
   )
 }

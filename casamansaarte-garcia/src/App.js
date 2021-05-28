@@ -3,6 +3,8 @@ import Navbar from './COMPONENTS/Navbar';
 import ItemListContainer from "./COMPONENTS/ItemListContainer";
 import Item from "./COMPONENTS/Item";
 import ItemList from "./COMPONENTS/ItemList";
+import ItemDetail from "./COMPONENTS/ItemDetail";
+import ItemDetailContainer from "./COMPONENTS/ItemDetailContainer";
 import React, { useState } from 'react';
 
 function App() {

@@ -38,6 +38,6 @@ p {
     margin: 3px 0;
 }`;
 
-export default Item
+export default Item;
 
 

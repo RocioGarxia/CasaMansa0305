@@ -1,23 +1,39 @@
-import ItemList from "./COMPONENTS/ItemList";
+import { useEffect, useState } from "react";
+import ItemList from './ItemList'
 
-task.then (function (value) { 
-    console.log (value);
-};
-function (reason) {
+const ItemListContainer = () => {
+    const [items, setItems] = useState([])
+    useEffect(() => {
+        const arr = [
+            {
+                numSerie: 1456,
+                tecnica: "Óleo",
+                artista: "Juan Jorge",
+            },
+            {
+                numSerie: 1457,
+                tecnica: "Óleo",
+                artista: "Juan Jorge",
+            },
+            {
+                numSerie: 1458,
+                tecnica: "Óleo",
+                artista: "Juan Jorge",
+            },
+            {
+                numSerie: 1459,
+                tecnica: "Mixed media",
+                artista: "Juan Jorge",
+            }
+        ]
+        const task = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(arr);
+            }, 2000)
+        })
+        task.then(value => setItems(value))
+    }, [items])
+    return <ItemList arts={items} />
 }
-);
-
-const task => new Promise { (resolve, reject) => {
-    setTimeout function () {
-        resolve(ItemList); }, 2000); });
-
-const ItemList = [ {
-    numSerie: 1456,
-    tecnica: "Óleo",
-    artista: "Juan Jorge", };
-}
-
-]
-
 
 export default ItemListContainer;

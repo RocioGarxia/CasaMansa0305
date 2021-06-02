@@ -1,6 +1,6 @@
 import React from "react"
 import { IconButton } from "@material-ui/core";
-import { ShoppingCartIcon } from '@material-ui/icons/ShoppingCart';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const CartWidget = () => {
     return (

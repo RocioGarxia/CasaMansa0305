@@ -1,17 +1,30 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import ItemDetail from "./COMPONENTS/ItemDetail";
 
-const getItems = () => {
+
+const ItemDetailContainer = () => {
+    const [item, setItem] = useState(null)
+
+    useEffect(() => {
+        const getITems = new Promise ((resolve) => {
+            setTimeout(() => {
+                resolve (
+                    id: "",
+                    price: "",
+                    title: "",
+                    description: "",
+                    image: "",
+                })
+            }, 2000)
+        })
+
+        getItems.then((Result) => {
+            setItem(Result)
+        })
+    })
+
     return (
-
-        function ItemDetailContainer () {
-            resolve then return
-        };
-
-//tiene que devolver con delay //
-
-<h1>Casa Mansa: A todo ponéle arte. </h1>
-    );
-};
+    <ItemDetail item={item}></ItemDetail> ) }
 
 
-export default getItems;
+export default ItemDetailContainer;

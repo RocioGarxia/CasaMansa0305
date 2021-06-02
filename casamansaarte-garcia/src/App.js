@@ -1,34 +1,23 @@
 import './App.css';
 import Navbar from './COMPONENTS/Navbar';
 import ItemListContainer from "./COMPONENTS/ItemListContainer";
-import Item from "./COMPONENTS/Item";
+import ItemCount from "./COMPONENTS/ItemCount";
+
+/* import Item from "./COMPONENTS/Item";
 import ItemList from "./COMPONENTS/ItemList";
 import ItemDetail from "./COMPONENTS/ItemDetail";
-import ItemDetailContainer from "./COMPONENTS/ItemDetailContainer";
-import React, { useState } from 'react';
+import ItemDetailContainer from "./COMPONENTS/ItemDetailContainer"; */
 
-function App() {
+import React from 'react';
+
+export default function App() {
+
   return (
     <div className="App">
   
 <Navbar/>
-<ItemListContainer>
-  <h1>Casa Mansa: A todo ponéle arte</h1>
-</ItemListContainer>
+<ItemListContainer/>
+<ItemCount stock={10} initial={1}/>
 </div>
   )
 }
-
-function Contador() {
-  const [count, setCount] = useState(0)
-  return (
-    <div>
-      <span>El contador está a {count}</span> 
-      <button onClick={() => setCount(count + 1)}>
-        Incrementar contador
-      </button>
-    </div>
-  )
-}
-
-export default App;

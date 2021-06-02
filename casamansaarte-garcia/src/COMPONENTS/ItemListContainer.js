@@ -1,10 +1,23 @@
-import React from "react";
+import ItemList from "./COMPONENTS/ItemList";
 
-const ItemListContainer = () => {
-    return (
-<h1>Casa Mansa: A todo ponéle arte. </h1>
-    );
+task.then (function (value) { 
+    console.log (value);
 };
+function (reason) {
+}
+);
+
+const task => new Promise { (resolve, reject) => {
+    setTimeout function () {
+        resolve(ItemList); }, 2000); });
+
+const ItemList = [ {
+    numSerie: 1456,
+    tecnica: "Óleo",
+    artista: "Juan Jorge", };
+}
+
+]
 
 
 export default ItemListContainer;
